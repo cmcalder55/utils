@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from typing import Tuple, Optional, List
+from typing import Tuple, List
 from numpy.typing import NDArray
 from sklearn.metrics import mean_squared_error
 
