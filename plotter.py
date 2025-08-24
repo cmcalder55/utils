@@ -140,3 +140,15 @@ def show_semantic_network(G, title):
     plt.title(title)
     plt.axis("off")
     plt.show()
+
+def plot_mse(matrix_error):
+    
+    plt.figure(figsize=(10, 5))
+    for i, errors in enumerate(matrix_error):
+        plt.plot(errors, label=f'R{i+1} MSE')
+    plt.xlabel('Step')
+    plt.ylabel('Mean Squared Error (MSE)')
+    plt.title('Matrix Factorization Error Convergence')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
